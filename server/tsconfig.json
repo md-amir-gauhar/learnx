@@ -1,0 +1,22 @@
+
+{
+	"compilerOptions": {
+		"target": "ES2022",
+		"module": "commonjs",
+		"rootDir": "./src",
+		"baseUrl": "./",
+		"outDir": "./dist",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"skipLibCheck": true,
+    "paths": {
+      "@prisma/client": ["node_modules/@prisma/client"]
+    }
+	},
+  "include": ["./src/**/*.ts", "@types"],
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"],
+}
